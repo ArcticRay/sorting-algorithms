@@ -23,7 +23,7 @@ def run_python_sort():
 
 def run_cpp_sort():
     print("Running C++ Bubble Sort...")
-    subprocess.run(["g++", "bubble_sort/bubble_sort.cpp", "-o", "bubble_sort/bubble_sort.out"])
+    subprocess.run(["g++", "-O3", "bubble_sort/bubble_sort.cpp", "-o", "bubble_sort/bubble_sort.out"])
     result = subprocess.run(["./bubble_sort/bubble_sort.out"], capture_output=True, text=True)
     print(result.stdout)
 
