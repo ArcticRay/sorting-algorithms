@@ -11,3 +11,9 @@ The following chart illustrates the runtime performance of Bubble Sort implement
 ![Bubble Sort Performance](visualizer/outputs/bubble_sort_performance.png)
 
 ---
+
+## 🎥 Bubble Sort Animation
+
+Below is a visualization of how the Bubble Sort algorithm works, sorting a small dataset step by step:
+
+![Bubble Sort Animation](visualizer/outputs/bubble_sort_animation.gif)
