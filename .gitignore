@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv
+
+# C++
+*.exe
+*.out
+*.o
+*.obj
+*.so
+*.a
+*.bin
+*.log
+*.dll
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# VS Code
+.vscode/
+.history/
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+*.old
+*.log
+*.lock
+
+# Operating system files
+Thumbs.db
+Desktop.ini
