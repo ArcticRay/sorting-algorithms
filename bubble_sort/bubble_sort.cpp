@@ -34,7 +34,7 @@ int main() {
 
     std::cout << "C++ Bubble Sort: " << elapsed_time << " seconds" << std::endl;
 
-    std::ofstream output("results/bubble_sort_results.csv", std::ios::app); // Append-Modus
+    std::ofstream output("results/bubble_sort_results.csv", std::ios::app); // Append-Mode
     output << "C++," << data.size() << "," << elapsed_time << "\n"; 
     return 0;
 }

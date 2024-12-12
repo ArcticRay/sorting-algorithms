@@ -5,9 +5,9 @@ import os
 def clear_csv():
     """Leert die CSV-Datei, um alte Ergebnisse zu entfernen."""
     csv_path = "results/bubble_sort_results.csv"
-    os.makedirs("results", exist_ok=True)  # Sicherstellen, dass der Ordner existiert
+    os.makedirs("results", exist_ok=True) 
     with open(csv_path, "w") as csvfile:
-        csvfile.write("")  # Überschreibt den Inhalt der Datei
+        csvfile.write("")
     print(f"Cleared previous contents of {csv_path}.")
 
 def generate_data():

@@ -29,7 +29,7 @@ public class BubbleSort {
         System.out.println("Java Bubble Sort: " + elapsedTime / 1000.0 + " seconds");
 
         // Save results
-        try (FileWriter writer = new FileWriter("results/bubble_sort_results.csv", true)) { // true für Append
+        try (FileWriter writer = new FileWriter("results/bubble_sort_results.csv", true)) { // true for Append
             writer.write("Java," + data.length + "," + elapsedTime / 1000.0 + "\n");
 }
 

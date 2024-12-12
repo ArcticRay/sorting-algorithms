@@ -11,12 +11,11 @@ def bubble_sort(arr):
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
 if __name__ == "__main__":
-    # Sicherstellen, dass der Ordner und die Ergebnisse existieren
     data_file = "data/input_10k.txt"
     csv_path = "results/bubble_sort_results.csv"
     os.makedirs("results", exist_ok=True)
 
-    # Daten aus Datei einlesen
+    # Read Data from file
     try:
         with open(data_file, "r") as f:
             data = list(map(int, f.read().split()))
@@ -25,14 +24,14 @@ if __name__ == "__main__":
         print(f"Error: {data_file} not found. Please generate the data first.")
         exit(1)
 
-    # Bubble Sort ausführen und Zeit messen
+    # Bubble Sort 
     start_time = time.time()
     bubble_sort(data)
     elapsed_time = time.time() - start_time
 
     print(f"Python Bubble Sort: {elapsed_time:.5f} seconds")
 
-    # Ergebnisse in die CSV-Datei schreiben
+    # Write results into csv
     try:
         with open(csv_path, "a", newline="") as csvfile:
             writer = csv.writer(csvfile)
