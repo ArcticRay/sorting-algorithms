@@ -1,2 +1,2 @@
-matplotlib==3.7.1
-unittest==1.0.0
+matplotlib
+pandas
